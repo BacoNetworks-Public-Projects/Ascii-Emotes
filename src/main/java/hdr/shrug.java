@@ -1,19 +1,25 @@
 package hdr;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public class shrug extends JavaPlugin{
-    @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("shrug")) {
-            Player player = (Player) sender;
-            player.chat("\u00AF\\\u005F\u0028\u30C4\u0029\u005F\u002F\u00AF");
-            return true;
-        }
-        return false;
+import hdr.commands.ShrugCMD;
+import org.spongepowered.api.Sponge;
+import org.spongepowered.api.command.spec.CommandSpec;
+import org.spongepowered.api.event.Listener;
+import org.spongepowered.api.event.game.state.GameStartedServerEvent;
+import org.spongepowered.api.plugin.Plugin;
+import org.spongepowered.api.text.Text;
+
+@Plugin(id = "shrug", name = "Shrug")
+public class shrug {
+
+    private void makeCommands() {
+        Sponge.getCommandManager().register(this, ShrugCMD, "shrug");
     }
 
+    private static CommandSpec ShrugCMD = CommandSpec.builder().description(Text.of("Shrug")).permission("hdr.shrug").executor(new ShrugCMD()).build();
+
+    @Listener
+    public void onInit(GameStartedServerEvent e) {
+        makeCommands();
+    }
 }

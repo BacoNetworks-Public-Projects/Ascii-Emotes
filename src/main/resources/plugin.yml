@@ -1,9 +1,0 @@
-name: Shrug
-main: hdr.shrug
-version: 1.0
-
-commands:
-   shrug:
-     description: Shrug.
-     permission:
-     usage: /shrug
