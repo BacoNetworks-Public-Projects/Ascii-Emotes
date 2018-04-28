@@ -1,9 +1,29 @@
-name: Shrug
-main: hdr.shrug
+name: Ascii_Emotes
+main: hdr.ascii
 version: 1.0
 
 commands:
    shrug:
      description: Shrug.
      permission:
-     usage: /shrug
+   flip:
+     description: Flip.
+     permission:
+   unflip:
+     description: Unflip.
+     permission:
+   disapprove:
+     description: Disapprove.
+     permission:
+   angry:
+     description: Angry.
+     permission:
+   ameno:
+     description: Ameno.
+     permission:
+   riot:
+     description: Riot.
+     permission:
+   csi:
+     description: CSI.
+     permission:
