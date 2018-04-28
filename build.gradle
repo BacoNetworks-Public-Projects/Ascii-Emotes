@@ -11,12 +11,12 @@ version = '1.0'
 
 sponge {
     plugin {
-        id = "shrug"
+        id = "ascii-emotes"
         meta {
-            name = "Shrug"
+            name = "Ascii-Emotes"
             version = "1.0"
             authors = ["HDR"]
-            description = "BacoNetworks Masterplugin"
+            description = "Various ascii emotes"
         }
     }
 }
