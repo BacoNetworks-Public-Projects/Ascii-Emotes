@@ -9,7 +9,6 @@ import org.spongepowered.api.event.game.state.GameStartedServerEvent;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.text.Text;
 
-@Plugin(id = "ascii-emotes", name = "Ascii-Emotes")
 public class ascii {
 
     private void makeCommands() {

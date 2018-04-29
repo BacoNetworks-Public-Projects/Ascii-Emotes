@@ -12,7 +12,7 @@ version = '1.0'
 sponge {
     plugin {
         meta {
-            name = "Ascii-Emotes"
+            name = "AsciiEmotes"
             version = "1.0"
             authors = ["HDR"]
             description = "Various ascii emotes"
